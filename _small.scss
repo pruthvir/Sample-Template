@@ -1,0 +1,132 @@
+/* Global Styles */
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .text-1, .date{
+	font-family: 'Bilbo', cursive;
+}
+
+p{
+	font-size: 12px;
+	line-height: 24px;
+}
+
+a{
+	color: $theme-color;
+	&:hover,&:active,&:focus{
+		color: $theme-color;
+		text-decoration: underline;
+	}
+}
+
+.full-width-row{
+	width: 100%;
+}
+
+/* Header Styles */
+header{
+	background: url(../images/header-bg.jpg) 0 0 repeat;
+	.top-bar,.title-area{
+		background: none;
+		height: 62px;
+	}
+	.top-bar-section{
+		ul{
+			li{
+				background: none;
+				a.button{
+					background: none;
+					border: none;
+					&:hover,&:active,&:focus{
+						color: $theme-color;
+						background: #000;
+					}
+				}
+			}	
+		}	
+	}
+}
+
+/* Slider Styles */
+#slider{	
+	.slide{
+		position: relative;
+		.banner {
+			position: absolute;
+			z-index: 100;
+			top: 100px;
+			left: 640px;
+			width: 320px;
+			h2{
+				width: 200px;
+				margin-left: 90px;
+				min-height: 110px;
+			}
+		}
+	}	
+}
+
+.gallery{
+	img{
+		width: 100%;
+		border: #fff 8px solid;
+	}
+}
+
+.miniBanner{
+	@include borderedBox(2px,dashed,#000,#f6f6f6);
+	h2{
+		span{
+			color: $theme-color
+		}
+	}
+}	
+
+.orbit-bullets li{
+	background: url(../images/pagination.png) no-repeat -45px 0;
+	width: 34px;
+	height: 34px;
+	border-radius: 0;
+	&.active{
+		background: url(../images/pagination.png) no-repeat 0 0;
+	}
+}
+
+.orbit-bullets-container{
+	position: absolute;
+	right: 13%;
+	bottom: 6%;
+	
+}
+
+.date{
+	padding: 14px 12px;
+	background: url(../images/date.png) no-repeat;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 24px;
+}	
+
+.darkBg{
+	background: $secondary-theme-color;
+	padding: 15px 0;
+}
+
+.readMore{
+	display: inline-block;
+	padding: 8px 0 8px 44px;
+	background: url(../images/button.png) no-repeat;
+	color: #000;
+	float: left;
+	clear: both;
+}
+
+footer{
+	padding: 40px 0;
+}
+
+article, .darkBg > .row{
+	margin-top: 12px;
+	margin-bottom: 12px;
+}

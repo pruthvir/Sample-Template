@@ -1,0 +1,16 @@
+header{
+	.top-bar-section{
+		margin-top: 12px;
+		ul{
+			li{
+				a.button{
+					border: none;
+					&:hover,&:active,&:focus{
+						color: $theme-color;
+						background: none;
+					}
+				}
+			}	
+		}	
+	}
+}
